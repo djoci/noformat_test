@@ -1,0 +1,217 @@
+/*
+    font-family: 'Poppins', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+    */
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    html,
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: radial-gradient(84.37% 84.37% at 50% 50%, rgba(196, 196, 196, 0) 36.99%, rgba(196, 196, 196, 0.51) 100%);
+        background-repeat: no-repeat;
+    }
+    
+    body {
+        color: #000000;
+        overflow-x: hidden;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 2em;
+    }
+
+    .container {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container-fluid {
+        width: 100%;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    h1, h2 {
+        font-weight: bold;
+    }
+
+    h1 {
+        font-size: 5.6em;
+        line-height: 100px;
+        letter-spacing: 5px;
+        margin-bottom: 20px;
+        text-transform: uppercase;        
+    }
+
+    h2 {
+        font-size: 3.5em;
+        line-height: 60px;
+        text-transform: capitalize;
+    }
+
+    p {
+        margin-bottom: 0.9em;
+    }
+
+    .col-half {
+        width: 50%;
+    }
+
+    .red-text {
+        color: #ED1C24;
+    }
+
+    .hero {
+        padding: 4.68em 0.9em;
+    }
+
+    .subheading {
+        font-size: 1.87em;
+        letter-spacing: 0.359649px;
+    }
+
+    .lead p {
+        font-size: 1.125em;
+        line-height: 27px;
+    }
+
+    .lead span {
+        display: block;
+        font-weight: 700;
+    }
+
+    .macro {
+        background: #FFF;
+        padding: 4.68em 6.625em;
+        text-align: left;
+    }
+
+    .macros-text div:nth-child(1) {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .macros-text div:nth-child(2) {
+        display: flex;
+        align-items: flex-start;
+        height: 50px;
+        flex-wrap: wrap;
+    }
+
+    .macros-text div:nth-child(2) > div {
+        margin-right: 15px;
+    }
+
+    .arrow {
+        display: flex;
+        width: 45px;
+        height: 45px;
+        background: #ED1C24;
+        
+        justify-content: center;
+    }
+
+    .arrow a {
+        font-size: 2em;
+        align-self: center;
+        color: #FFF;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .arrow a:hover {
+        font-size: 2.5em;  
+    }
+
+    .macro-image {
+        margin: 2em;
+    }
+
+    .macro-image img {
+        width: 100%;
+        max-width: 552px;
+        height: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        .macro-image {
+            margin-left: -140px;
+        }
+      }
+
+    @media screen and (max-width: 992px) {
+        h1 {
+            font-size: 4em;
+            line-height: 70px;
+            letter-spacing: 4px;
+        }
+
+        h2 {
+            font-size: 2em;
+            line-height: 50px;
+        }
+
+        .hero {
+            padding: 2em 0.9em;
+        }
+
+        .macro {
+            padding: 2em 4em;
+        }
+
+        .macro-image img {
+            max-width: 400px;
+        }
+        .macros-text div:nth-child(1) {
+            font-size: 0.9em;
+        }
+      }
+
+    @media screen and (max-width: 767px) {
+        body {
+            line-height: 1.5em;
+        }
+
+        .row {
+          flex-direction: column;
+        }
+        .col-half {
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            line-height: 35px;
+            letter-spacing: 3px;
+        }
+
+        .subheading {
+            font-size: 1.2em;
+            letter-spacing: 0.2px;
+        }
+
+        .macro {
+            text-align: center;
+        }
+        .macro p {
+            text-align: left;
+        }        
+      }
+
+     
+
+      
