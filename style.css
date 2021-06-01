@@ -36,7 +36,9 @@
         width: 100%;
     }
 
-    .row {
+    .row ,
+    .footer-col,
+    .footer-col form {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -146,8 +148,28 @@
         margin-bottom: 63px;
     }
 
-    .hero {
+    .hero , 
+    .call-to-action{
         padding: 4.68em 0.9em;
+    }
+
+    .call-to-action {
+        background: #FFF;
+    }
+
+    .call-to-action p ,
+    .call-to-action a {
+        text-transform: uppercase;
+    }
+
+    .call-to-action h2 {
+        margin-bottom: 30px;
+    }
+
+    .call-to-action .button-red {
+        width: 180px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .subheading {
@@ -165,7 +187,7 @@
         font-weight: 700;
     }
 
-    .macro {
+    .macro  {
         background: #FFF;
         padding: 4.68em 6.625em;
         text-align: left;
@@ -228,6 +250,32 @@
         height: auto;
     }
 
+    .footer {
+        background: #ED1C24;
+        color: #FFF;
+        font-size: 14px;
+        line-height: 21px;
+        padding: 100px 0;
+        text-align: left;
+    }
+
+    .footer-col ,
+    .footer-logo {
+        margin-bottom: 40px;
+    }
+
+    .footer-col form {
+        margin-left: auto;
+    }
+
+    .footer-col input {
+        height: 57px;
+    }
+
+    .footer-col input {
+        padding: 0 20px;
+    }
+
     @media screen and (min-width: 768px) {
         /*navbar*/
         .navbar {
@@ -287,9 +335,25 @@
             background-position: 0 0, 7.5px 7.5px;
             background-size: 15px 15px;
         }
+
+        .footer-col ,
+        .footer-logo {
+            margin-bottom: 80px;
+        }
     }
 
-    @media screen and (max-width: 992px) {
+    @media screen and (min-width: 992px) {
+        .macro {
+            margin-bottom: 140px;
+        }
+
+        .macro-image {
+            margin-bottom: -140px;
+        }
+
+    }
+
+    @media screen and (max-width: 991px) {
         h1 {
             font-size: 4em;
             line-height: 70px;
@@ -314,7 +378,7 @@
         }
 
         .macro {
-            padding: 2em 4em;
+            padding: 2em 4em 6em;
         }
 
         .macro-image img {
