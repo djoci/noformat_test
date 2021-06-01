@@ -15,6 +15,7 @@
         font-family: 'Poppins', sans-serif;
         background: radial-gradient(84.37% 84.37% at 50% 50%, rgba(196, 196, 196, 0) 36.99%, rgba(196, 196, 196, 0.51) 100%);
         background-repeat: no-repeat;
+        max-width: 100%;
     }
     
     body {
