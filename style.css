@@ -138,6 +138,7 @@
         top: 194px;
         left: -20px;
         cursor: pointer;
+        cursor: all-scroll;
         opacity: 0.3;
     }
     .scroll:hover{
