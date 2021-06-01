@@ -59,8 +59,62 @@
         text-transform: capitalize;
     }
 
+    a {
+        align-self: center;
+        color: #FFF;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
     p {
         margin-bottom: 0.9em;
+    }
+
+    /*Navbar*/
+    .navbar {
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        background-color: transparent;
+        padding-bottom: 10px;
+    }
+
+    .main-nav {
+        list-style-type: none;
+        display: none;
+    }
+
+    .nav-links {
+        color: #000000;
+    }
+
+    .main-nav li {
+        text-align: center;
+        margin: 15px auto;
+    }
+
+    .logo {
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    .logo img {
+        height: 55px;
+    }
+
+    .navbar-toggle {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        cursor: pointer;
+        color: #ED1C24;
+        font-size: 32px;
+    }
+
+    .active {
+        display: block;
     }
 
     .col-half {
@@ -69,6 +123,26 @@
 
     .red-text {
         color: #ED1C24;
+    }
+
+    .wrap {
+        position: relative;
+    }
+
+    .scroll {
+        position: absolute;
+        top: 539px;
+        left: 108px;
+    }
+
+    .scroll-text {
+        transform: rotate(270deg);
+        letter-spacing: 0.355em;
+        text-transform: uppercase;
+        font-size: 8px;
+        font-weight: 700;
+        line-height: 12px;
+        margin-bottom: 63px;
     }
 
     .hero {
@@ -111,21 +185,32 @@
         margin-right: 15px;
     }
 
-    .arrow {
+    .button-red {
         display: flex;
+        background: #ED1C24;       
+        justify-content: center; 
+    }
+
+    .apply {
+        position: fixed;
+        right: 85px;
+        top: 452px;
+        width: 5em;
+        height: 5em;
+        border-radius: 50%; 
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 14px;
+        text-transform: uppercase;
+    }
+
+    .arrow {
         width: 45px;
         height: 45px;
-        background: #ED1C24;
-        
-        justify-content: center;
     }
 
     .arrow a {
         font-size: 2em;
-        align-self: center;
-        color: #FFF;
-        text-decoration: none;
-        transition: 0.3s;
     }
 
     .arrow a:hover {
@@ -143,10 +228,65 @@
     }
 
     @media screen and (min-width: 768px) {
+        /*navbar*/
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 0;
+            height: 70px;
+            align-items: center;
+        }
+
+        .main-nav {
+            display: flex;
+            margin-right: 30px;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+
+        .main-nav li {
+            margin: 0;
+        }
+
+        .nav-links {
+            margin-left: 40px;
+        }
+
+        .logo {
+            margin-top: 0;
+        }
+
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+
+        .navbar-toggle {
+            display: none;
+        }
+
+        .nav-links:hover {
+            color: #ED1C24;
+        }
+
         .macro-image {
             margin-left: -140px;
         }
-      }
+
+        .elipse{
+            width: 585px;
+            height: 585px;
+            border-radius: 50%;
+            position: absolute;
+            top:10vw;
+            right:-5vw;
+            z-index: -1;      
+            opacity: 0.3;
+            background-image: radial-gradient(#231B3A 2px, transparent 2px),radial-gradient(#231B3A 2px, transparent 2px);
+            background-position: 0 0, 7.5px 7.5px;
+            background-size: 15px 15px;
+        }
+    }
 
     @media screen and (max-width: 992px) {
         h1 {
@@ -158,6 +298,14 @@
         h2 {
             font-size: 2em;
             line-height: 50px;
+        }
+
+        .navbar {
+            font-size: 12px;
+        }
+
+        .nav-links {
+            margin-left: 20px;
         }
 
         .hero {
@@ -199,6 +347,9 @@
             letter-spacing: 3px;
         }
 
+        span.nav-links {
+            display: none;
+        }
         .subheading {
             font-size: 1.2em;
             letter-spacing: 0.2px;
