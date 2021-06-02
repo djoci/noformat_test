@@ -244,6 +244,11 @@
         display: flex;
         background: #ED1C24;       
         justify-content: center; 
+        transition: 0.3s;
+    }
+
+    .button-red:hover {
+        background-color: #E6040D;
     }
 
     .apply {
@@ -257,6 +262,11 @@
         font-weight: 700;
         line-height: 14px;
         text-transform: uppercase;
+    }
+
+    .apply:hover {
+        width: 5.3em;
+        height: 5.3em;
     }
 
     .arrow {
@@ -280,6 +290,12 @@
         width: 100%;
         max-width: 552px;
         height: auto;
+    }
+
+    .call-to-action .button {
+        padding: 15px 32px;
+        display: inline-block;
+        margin: 4px 2px;   
     }
 
     .footer {
@@ -313,6 +329,10 @@
 	    border: #fff solid 1px;
 	    border-radius: 0;
     }
+
+    ::placeholder {
+        color: #fff;
+      }
 
     .footer-col input[type="text"] {
         flex: 3;
@@ -510,7 +530,11 @@
         }  
         .scroll{
             display: none;
-        } 
+        }
+        
+        .apply {            
+            right: 55px;
+        }
         
         .footer {
             padding: 50px 0;
@@ -542,7 +566,4 @@
             padding: 0 10px;
         }
       }
-
-     
-
       
