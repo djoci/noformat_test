@@ -156,7 +156,7 @@
         position: absolute;
         top: 194px;
         left: -20px;
-        cursor: all-scroll;
+        cursor: pointer;
         opacity: 0.3;
     }
     .scroll:hover{
